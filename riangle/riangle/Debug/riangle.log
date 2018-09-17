@@ -1,0 +1,5 @@
+﻿  Source.cpp
+c:\users\jc155706\desktop\c++\cppchapter5\riangle\riangle\source.cpp(12): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+c:\users\jc155706\desktop\c++\cppchapter5\riangle\riangle\source.cpp(20): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+c:\users\jc155706\desktop\c++\cppchapter5\riangle\riangle\source.cpp(28): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+  riangle.vcxproj -> C:\Users\jc155706\Desktop\C++\CPPChapter5\riangle\Debug\riangle.exe

@@ -1,0 +1,4 @@
+﻿  Source.cpp
+c:\users\jc155706\desktop\c++\cppchapter5\doorprize\doorprize\source.cpp(38): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\jc155706\desktop\c++\cppchapter5\doorprize\doorprize\source.cpp(58): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  DoorPrize.vcxproj -> C:\Users\jc155706\Desktop\C++\CPPChapter5\DoorPrize\Debug\DoorPrize.exe
