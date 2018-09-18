@@ -51,13 +51,23 @@ int rightTriangleMissSide()
 	}
 	else if (miss == 2)
 	{
-		rightTriangleCalcB(a, c);
-		
+		cout << "What is your a side length? >> ";
+		cin >> a;
+		cout << "What is your c side length? >> ";
+		cin >> c;
+
+		result = rightTriangleCalcB(a, c);
+		cout << "Your missing side = " << result << endl;
 	}
 	else if (miss == 3)
 	{
-		rightTriangleCalcC(a, b);
+		cout << "What is your a side length? >> ";
+		cin >> a;
+		cout << "What is your b side length? >> ";
+		cin >> b;
 
+		result = rightTriangleCalcC(a, b);
+		cout << "Your missing side = " << result << endl;
 	}
 	return 0;
 
@@ -102,10 +112,88 @@ int rightTriangleSolveQ()
 		cout << "Please stop messing around!";
 	return 0;
 }
-//int isocelesQ()
-//{
-//
-//}
+int isocelesMissSide()
+{
+	double result;
+	double a = 0;
+	double b = 0;
+	double c = 0;
+	int miss;
+
+	cout << "Which side are you missing?\n1 - a\n2 - b\n3 - c\n >> ";
+	cin >> miss;
+
+	if (miss == 1)
+	{
+		cout << "What is your b side length? >> ";
+		cin >> b;
+		cout << "What is your c side length? >> ";
+		cin >> c;
+
+		result = rightTriangleCalcA(b, c);
+		cout << "Your missing side = " << result << endl;
+	}
+	else if (miss == 2)
+	{
+		cout << "What is your b side length? >> ";
+		cin >> a;
+		cout << "What is your c side length? >> ";
+		cin >> c;
+
+		result = rightTriangleCalcB(a, c);
+		cout << "Your missing side = " << result << endl;
+	}
+	else if (miss == 3)
+	{
+		cout << "What is your b side length? >> ";
+		cin >> a;
+		cout << "What is your c side length? >> ";
+		cin >> b;
+
+		result = rightTriangleCalcC(a, b);
+		cout << "Your missing side = " << result << endl;
+	}
+	return 0;
+
+
+}
+int isocelesPerimeter()
+{
+	double a;
+	double b;
+	double c;
+	double result;
+
+	cout << "What is your a side >> ";
+	cin >> a;
+	cout << "What is your b side >> ";
+	cin >> b;
+	cout << "What is your c side >>";
+	cin >> c;
+
+	result = a + b + c;
+
+	cout << "Your perimeter is " << result;
+	return 0;
+}
+int isocelesQ()
+{
+	int choice;
+	cout << "Would you like to find,\n 1 - A missing side\n 2 - Perimeter\n >> ";
+	cin >> choice;
+
+	if (choice == 1)
+	{
+		isocelesMissSide();
+	}
+	else if (choice == 2)
+	{
+		isocelesPerimeter();
+	}
+	else
+		cout << "Die";
+	return 0;
+}
 int perimeterEqual()
 {
 	double side;
@@ -169,7 +257,7 @@ int main()
 	}
 	else if (choiceTriangle == 2)
 	{
-		//isocelesQ();
+		isocelesQ();
 	}
 	else if (choiceTriangle == 3)
 	{
